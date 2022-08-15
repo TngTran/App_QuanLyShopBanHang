@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKy"
+    android:id="@+id/layout_doimk"
+    android:background="@drawable/backgrounddetail">
+    <TextView
+        android:id="@+id/tvDoiMKtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="ĐỔI MẬT KHẨU"
+        android:textColor="@color/brown"
+        android:textSize="28dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputmkc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tvDoiMKtext"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/brown"
+        android:textColorHint="@color/brown"
+        >
+
+        <EditText
+            android:id="@+id/edtMKC"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:focusable="true"
+            android:hint="Mật khẩu cũ"
+            android:inputType="textPassword"
+            android:textSize="23dp"
+            android:backgroundTint="@color/brown">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputmkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputmkc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/brown"
+        android:textColorHint="@color/brown"
+        >
+        <EditText
+            android:id="@+id/edtMKMdk"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu mới"
+            android:inputType="textPassword"
+            android:textSize="23dp"
+            android:backgroundTint="@color/brown">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputxnmk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputmkm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/brown"
+        android:textColorHint="@color/brown"
+        >
+        <EditText
+            android:id="@+id/edtXNMKM"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Xác nhận mật khẩu"
+            android:inputType="textPassword"
+            android:textSize="23dp"
+            android:textColorHint="@color/brown"
+            android:backgroundTint="@color/brown"
+            >
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDoiMK"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/inputxnmk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_style"
+        android:text="Đổi mật khẩu"
+        android:textColor="@color/brown"
+        android:textSize="18dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/beige">
+    <TextView
+        android:id="@+id/tv_MaKH"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="MaKH"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_SDT"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_MaKH"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="SDT"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_TenKH"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/tv_MaKH"
+        android:text="TenKH"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_SDT"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/img_Edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/tv_TenKH"
+        android:src="@drawable/imgedit"
+        />
+
+    <ImageView
+        android:id="@+id/img_Delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_Edit"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/tv_Email"
+        android:background="@drawable/imgedit2"/>
+</RelativeLayout>

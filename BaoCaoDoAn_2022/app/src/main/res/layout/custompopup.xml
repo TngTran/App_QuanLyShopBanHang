@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="550dp"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient_style"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/deletebackground"/>
+        <ImageView
+            android:id="@+id/menuanhdaidien"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_avatarnam" />
+        <TextView
+            android:id="@+id/menutennv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/menuanhdaidien"
+            android:layout_marginTop="10dp"
+            android:text="Ten kh"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/menugtnv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/menutennv"
+            android:layout_marginTop="10dp"
+            android:text="Giới tính"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/menuemailnv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/menugtnv"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/menuSDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/menuemailnv"
+            android:layout_marginTop="10dp"
+            android:text="Số điện thoại"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_DoiThongTin"
+            android:layout_width="255dp"
+            android:layout_height="61dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/menuSDT"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_style4"
+            android:text="ĐỔI THÔNG TIN CÁ NHÂN"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_DoiMK"
+            android:layout_width="255dp"
+            android:layout_height="61dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_DoiThongTin"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_style4"
+            android:text="ĐỔI MẬT KHẨU"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SanPham_Update">
+    <!--title-->
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblue"
+        android:title="CẬP NHẬT SẢN PHẨM" />
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="9"
+                 android:orientation="vertical">
+
+                 <ImageButton
+                     android:id="@+id/img_Button"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/ic_launcher_foreground"></ImageButton>
+             </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="9">
+
+                    <TextView
+                        android:id="@+id/textView_MaSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Mã sản phẩm:"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_MaSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="9">
+
+                    <TextView
+                        android:id="@+id/textView_TenSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="Tên sản phẩm:"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_TenSP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="9">
+
+                    <TextView
+                        android:id="@+id/textView_SoLuong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Số Lượng:"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_SoLuong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+
+                    <TextView
+                        android:id="@+id/textView_GiaCa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Giá Cả:"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ed_GiaCa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_Camera"
+                android:scaleType="fitXY"
+                android:src="@drawable/camera"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            </ImageButton>
+            <ImageView
+                android:id="@+id/img_Hinh"
+                android:scaleType="fitXY"
+                android:src="@drawable/image"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp">
+
+            </ImageView>
+            <ImageButton
+                android:id="@+id/btn_Folder"
+                android:scaleType="fitXY"
+                android:src="@drawable/folder"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_Update"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="CẬP NHẬT">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

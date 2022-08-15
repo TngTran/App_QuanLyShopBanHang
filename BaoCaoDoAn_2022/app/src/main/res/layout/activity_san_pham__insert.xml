@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SanPham_Insert"
+    android:background="@color/beige"
+    android:id="@+id/layout_insertSP">
+
+    <TextView
+        android:id="@+id/tv_HienThiThemSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Thêm sản phẩm"
+        android:textSize="28dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="@color/brown"/>
+
+    <EditText
+        android:id="@+id/ed_TenSP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_HienThiThemSP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Tên sản phẩm"
+        android:textColorHint="@color/brown"
+        android:backgroundTint="@color/brown"/>
+    <EditText
+        android:id="@+id/ed_MoTaSP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed_TenSP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Mô tả sản phẩm"
+        android:textColorHint="@color/brown"
+        android:backgroundTint="@color/brown"/>
+
+    <EditText
+        android:id="@+id/ed_SoLuong"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed_MoTaSP"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="Số lượng"
+        android:inputType="number"
+        android:textColorHint="@color/brown"
+        android:backgroundTint="@color/brown"/>
+
+    <EditText
+        android:id="@+id/ed_GiaCa"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed_MoTaSP"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/ed_SoLuong"
+        android:hint="Giá cả"
+        android:inputType="number"
+        android:textColorHint="@color/brown"
+        android:backgroundTint="@color/brown"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_Camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed_SoLuong"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/imgHinh"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera"
+        android:backgroundTint="@color/brown">
+
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/ed_SoLuong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image"
+        >
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/ibtn_Folder"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed_SoLuong"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/imgHinh"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:src="@drawable/folder"
+        android:backgroundTint="@color/brown">
+
+    </ImageButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ThemSP"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgHinh"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="5dp"
+        android:text="THÊM"
+        android:textColor="@color/brown"
+        android:background="@drawable/button_style"
+        android:layout_centerHorizontal="true">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>

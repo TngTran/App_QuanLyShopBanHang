@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKy"
+    android:id="@+id/layout_doitt"
+    android:background="@drawable/backgrounddetail">
+    <TextView
+        android:id="@+id/tvDoiTTtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="ĐỔI THÔNG TIN"
+        android:textColor="@color/brown"
+        android:textSize="28dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtTenNVdtt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDoiTTtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/brown"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/brown"
+        android:focusable="true"
+        android:hint="Họ và tên"
+        android:paddingLeft="10dp"
+        android:textSize="23dp"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtEmaildtt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSDTdtt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/brown"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/brown"
+        android:hint="Email"
+        android:textSize="23dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown">
+
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rdoGTDTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmaildtt"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-3dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rdo_NamDTT"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@+id/edtEmaildk"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/rdo_Nam"
+            android:buttonTint="@color/brown"
+            android:text="Male"
+            android:textColor="@color/brown"
+            android:textSize="23dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rdo_NuDTT"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@+id/edtEmaildk"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/edtGioiTinhdk"
+            android:buttonTint="@color/brown"
+            android:text="Female"
+            android:textColor="@color/brown"
+            android:textSize="23dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtSDTdtt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTenNVdtt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/brown"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/brown"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textSize="23dp"
+        android:textColor="@color/brown"
+        android:textColorHint="@color/brown">
+
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDoiTT"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rdoGTDTT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_style"
+        android:text="XÁC NHẬN"
+        android:textSize="18dp"
+        android:textColor="@color/brown" />
+
+</RelativeLayout>

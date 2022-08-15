@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertHoaDon"
+    android:id="@+id/layout_insertHD"
+    android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/tv_BaoCaoThongKe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:fontFamily="serif-monospace"
+        android:text="Báo báo thông kê"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/brown"/>
+
+    <TextView
+        android:id="@+id/tv_hienthiChonNgay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_TongDoanhThu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="55dp"
+        android:gravity="center_vertical"
+        android:text="Chọn ngày:"
+        android:textSize="20dp"
+        android:textColor="@color/brown"/>
+
+    <TextView
+        android:id="@+id/tvChonNgay"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_TongDoanhThu"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/tv_hienthiChonNgay"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_XemSL"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChonNgay"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="Xem số lượng tồn kho"
+        android:textSize="16dp"
+        android:background="@color/mint"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_XemTongDT"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_XemSL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Xem tổng doanh thu"
+        android:textSize="16dp"
+        android:background="@color/mint"/>
+
+    <TextView
+        android:id="@+id/tv_TongDoanhThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_SLTonKho"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Tổng doanh thu:"
+        android:textSize="20dp"
+        android:textColor="@color/brown"/>
+    <TextView
+        android:id="@+id/tv_SLTonKho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_BaoCaoThongKe"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Số lượng tồn kho:"
+        android:textSize="20dp"
+        android:textColor="@color/brown"/>
+
+    <ImageButton
+        android:id="@+id/img_Calendar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_TongDoanhThu"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@+id/tvChonNgay"
+        android:background="@null"
+        android:src="@drawable/calendar" />
+</RelativeLayout>

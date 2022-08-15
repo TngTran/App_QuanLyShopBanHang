@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200" android.R.id="pur">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange" >#F19816</color>
+    <color name="orange2">#F4C279</color>
+    <color name="grey">#99A3A2</color>
+    <color name="pink">#ff9a93</color>
+    <color name="purple">#81087F</color>
+    <color name="yellow">#FFD402</color>
+    <color name="skyblue">#73c2e6</color>
+    <color name="beige">#f7efe2</color>
+    <color name="brown">#693d3d</color>
+    <color name="mint">#cfe6e2</color>
+    <color name="beige2">#fedba1</color>
+    <color name="beige3">#fac169</color>
+    <color name="coffee">#b49677</color>
+</resources>

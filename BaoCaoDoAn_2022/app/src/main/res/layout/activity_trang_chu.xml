@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrangChu"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/backgroundtrangchu3">
+
+    <ImageView
+        android:id="@+id/tkanhdaidien"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="showPopup"
+        android:focusable="false"
+        android:background="@drawable/ic_avatarnam" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgGif"
+        android:layout_width="82dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/lsttaikhoan"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="199dp"
+        android:layout_marginBottom="-24dp"
+        android:src="@drawable/testgif6" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgGif2"
+        android:layout_width="111dp"
+        android:layout_height="166dp"
+        android:layout_above="@+id/lsttaikhoan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="-50dp"
+        android:src="@drawable/testgif7"
+        android:scaleX="-1"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgGif3"
+        android:layout_width="111dp"
+        android:layout_height="166dp"
+        android:layout_above="@+id/lsttaikhoan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="-48dp"
+        android:src="@drawable/testgif8"
+        android:scaleX="-1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgGif5"
+        android:layout_width="96dp"
+        android:layout_height="138dp"
+        android:layout_above="@+id/lsttaikhoan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="-34dp"
+        android:src="@drawable/testgif20" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgGif6"
+        android:layout_width="111dp"
+        android:layout_height="166dp"
+        android:layout_above="@+id/lsttaikhoan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="-16dp"
+        android:layout_marginBottom="-44dp"
+        android:src="@drawable/testgif22"
+        android:scaleX="-1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgGif7"
+        android:layout_width="112dp"
+        android:layout_height="170dp"
+        android:layout_above="@+id/lsttaikhoan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="-47dp"
+        android:scaleX="-1"
+        android:src="@drawable/testgif21" />
+
+    <TextView
+        android:id="@+id/tktennv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/tkanhdaidien"
+        android:layout_marginTop="10dp"
+        android:text="Ten kh"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+
+    <ListView
+        android:id="@+id/lsttaikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/style_trangchu"
+        android:divider="@color/brown"
+        android:dividerHeight="3dp"
+        android:focusable="false"/>
+
+
+
+</RelativeLayout>

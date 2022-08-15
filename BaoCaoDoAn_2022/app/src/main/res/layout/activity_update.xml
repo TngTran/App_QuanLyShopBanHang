@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity"
+    android:background="@drawable/backgroundtrangchu3">
+
+    <TextView
+        android:id="@+id/tv_SuaTTKH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="casual"
+        android:text="SỬA THÔNG TIN"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_MaKHUD"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tv_SuaTTKH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="@color/black"
+        android:enabled="false"
+        android:hint="Mã khách hàng"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_TenKHUD"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/edt_MaKHUD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Tên khách hàng"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+
+        />
+    <EditText
+        android:id="@+id/edt_SDTKHUD"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/edt_TenKHUD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="Số điện thoại"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_EmailKHUD"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/edt_SDTKHUD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/btn_Sua"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/edt_EmailKHUD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="SỬA"
+        android:textColor="@color/black"
+        android:background="@drawable/button_style3"/>
+</RelativeLayout>

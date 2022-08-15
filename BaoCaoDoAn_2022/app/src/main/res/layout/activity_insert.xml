@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity"
+    android:id="@+id/insertlayout"
+    android:background="@drawable/backgroundtrangchu2"
+    >
+
+    <TextView
+        android:id="@+id/tvThemKH"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:text="Thêm khách hàng"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-light"/>
+
+    <EditText
+        android:id="@+id/edt_MaKHThem"
+        android:layout_width="270dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tvThemKH"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:enabled="false"
+        android:hint="Mã khách hàng"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/edt_TenKHThem"
+        android:layout_width="270dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/edt_MaKHThem"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:hint="Tên khách hàng"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+
+        />
+    <EditText
+        android:id="@+id/edt_SDTKHThem"
+        android:layout_width="270dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/edt_TenKHThem"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_EmailKHThem"
+        android:layout_width="270dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/edt_SDTKHThem"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:textSize="22dp"
+        android:textStyle="italic"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/button_style3"
+        android:id="@+id/btn_Them"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edt_EmailKHThem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="THÊM"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>

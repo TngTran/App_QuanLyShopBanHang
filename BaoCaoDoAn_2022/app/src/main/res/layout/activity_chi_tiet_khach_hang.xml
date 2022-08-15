@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietKhachHang"
+    android:background="@drawable/backgroundchitietkh">
+
+    <TextView
+        android:id="@+id/tv_CTKH"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:textSize="27dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="THÔNG TIN KHÁCH HÀNG" />
+
+    <TextView
+        android:id="@+id/tv_CTMaKH"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tv_CTKH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/black"
+        android:text="Mã khách hàng"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_CTTenKH"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tv_CTMaKH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Tên khách hàng"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/tv_CTSDT"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tv_CTTenKH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Số điện thoại"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/tv_CTEmail"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/tv_CTSDT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Email"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+
+        />
+
+</RelativeLayout>
